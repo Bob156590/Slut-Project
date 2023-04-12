@@ -1,0 +1,25 @@
+body{
+    background-color: beige;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr auto 0.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
