@@ -5,7 +5,7 @@ body{
 .wrapper{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-rows: 10vh 80vh 6vh;
     margin: 0;
     padding: 0;
     grid-template-areas:
@@ -25,6 +25,7 @@ main{
 footer{
  grid-area: footer;
 }
+
 nav ul{
     display: grid;
     grid-template-columns: auto;
@@ -36,14 +37,48 @@ ul{
     list-style-type: none;
 }
 
+.circle{
+    display: flex;
+    background: gray;
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 @media only screen and (min-width: 900px) {
     nav ul{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #Instrumenter main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
 
 a, a:visited, a:hover, a:active{
     text-decoration: none;
     color: black;
+}
+
+#Infosida main{
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;;
+}
+
+#Instrumenter main{
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
 }
