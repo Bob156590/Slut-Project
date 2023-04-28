@@ -35,6 +35,15 @@ nav ul{
 ul{
     text-decoration: none;
     list-style-type: none;
+    padding: 0;
+    
+}
+
+nav li{
+    list-style-type:none;
+    text-align:center;
+    border: 1px solid gray;
+    border-radius: 10px;
 }
 
 .circle{
@@ -53,25 +62,12 @@ footer{
     grid-template-columns: 1fr 1fr;
 }
 
-@media only screen and (min-width: 900px) {
-    nav ul{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    #Instrumenter main{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-}
-
 a, a:visited, a:hover, a:active{
     text-decoration: none;
     color: black;
 }
 
-#Infosida main{
+#Info main{
     display: grid;
     grid-template-columns: auto;
     text-align: center;;
@@ -81,4 +77,62 @@ a, a:visited, a:hover, a:active{
     display: grid;
     grid-template-columns: auto;
     text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    nav li{
+        list-style-type:none;
+        font-size: 1.5em;
+        text-align:center;
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
+
+    #Instrumenter main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #Info main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #Art main{
+        display: grid;
+        grid-template-rows: auto 1fr;
+    }
+
+    img{
+        width: 55%;
+    }
+}
+
+h1, p{
+    text-align: center;
+}
+
+#Hemsida h1, #Hemsida p{
+    text-align: left;
+}
+
+table, th, td{
+    border: 4px;
+    border-collapse: collapse ;
+    border-style: inset;
+    margin: auto;
+}
+
+tr{
+    border-radius: 50px;
+}
+
+th,td{
+    padding: 20px 50px;
 }
