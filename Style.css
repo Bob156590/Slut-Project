@@ -36,7 +36,6 @@ ul{
     text-decoration: none;
     list-style-type: none;
     padding: 0;
-    
 }
 
 nav li{
@@ -44,6 +43,16 @@ nav li{
     text-align:center;
     border: 1px solid gray;
     border-radius: 10px;
+    margin-top: 10px;
+}
+
+nav li:nth-child(1){
+    border: none;
+    text-align: left;
+}
+
+nav img{
+    width: 20px;
 }
 
 .circle{
@@ -62,7 +71,7 @@ footer{
     grid-template-columns: 1fr 1fr;
 }
 
-a, a:visited, a:hover, a:active{
+a, a:visited, a:hover{
     text-decoration: none;
     color: black;
 }
@@ -82,7 +91,7 @@ a, a:visited, a:hover, a:active{
 @media only screen and (min-width: 900px) {
     nav ul{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
     nav li{
@@ -91,7 +100,23 @@ a, a:visited, a:hover, a:active{
         text-align:center;
         border: 1px solid gray;
         border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
+
+    li{
+        margin: auto;
+    }
+
+    nav img{
+        width: 25%;
+    }
+    
+    nav li:nth-child(1){
+        border: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }    
 
     #Instrumenter main{
         display: grid;
@@ -118,6 +143,10 @@ h1, p{
     text-align: center;
 }
 
+footer p{
+    text-align: left;
+}
+
 #Hemsida h1, #Hemsida p{
     text-align: left;
 }
@@ -134,5 +163,5 @@ tr{
 }
 
 th,td{
-    padding: 20px 50px;
+    padding: 5vh 5vh;
 }
