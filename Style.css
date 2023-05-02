@@ -1,5 +1,6 @@
 body{
     background-color: beige;
+    margin: 0;
 }
 
 .wrapper{
@@ -26,7 +27,7 @@ footer{
  grid-area: footer;
 }
 
-nav ul{
+ul{
     display: grid;
     grid-template-columns: auto;
     text-align: center;
@@ -38,7 +39,7 @@ ul{
     padding: 0;
 }
 
-nav li{
+li{
     list-style-type:none;
     text-align:center;
     border: 1px solid gray;
@@ -71,10 +72,11 @@ footer{
     grid-template-columns: 1fr 1fr;
 }
 
-a, a:visited, a:hover{
+a, a:link,a:visited, a:hover{
     text-decoration: none;
-    color: black;
+    color: white;
 }
+
 
 #Info main{
     display: grid;
@@ -94,29 +96,32 @@ a, a:visited, a:hover{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
-    nav li{
-        list-style-type:none;
-        font-size: 1.5em;
-        text-align:center;
-        border: 1px solid gray;
-        border-radius: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    li{
+    nav{
         margin: auto;
     }
 
-    nav img{
-        width: 25%;
+    nav li{
+        list-style-type:none;
+        font-size: 30px;
+        text-align:center;
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+
     }
-    
-    nav li:nth-child(1){
+
+    nav img{
+        width: 50%;
+    }
+
+    .Logo{
         border: none;
         text-align: center;
         margin-bottom: 10px;
-    }    
+        font-size: 40px;
+        margin: auto;
+    }
 
     #Instrumenter main{
         display: grid;
@@ -164,4 +169,10 @@ tr{
 
 th,td{
     padding: 5vh 5vh;
+}
+
+
+
+header{
+    background: rgb(46, 163, 151);
 }
