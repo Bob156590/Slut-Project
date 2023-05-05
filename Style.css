@@ -92,6 +92,7 @@ a, a:link,a:visited, a:hover{
     margin-left: 14vw;
     margin-right: 14vw;
     background-color: darkgray;
+    width: 72vw;
 }
 
 .LokalMeny ul{
@@ -119,7 +120,12 @@ a, a:link,a:visited, a:hover{
     background: gray;
 }
 
-#Art main{
+#Låter .box{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#Art main, #Låter main, #Turné main, #Feedback main{
     display: grid;
     grid-template-rows: 5vh auto;
 }
@@ -179,6 +185,7 @@ a, a:link,a:visited, a:hover{
         margin-left: 20vw;
         margin-right: 20vw;
         background-color: darkgray;
+        width: 60vw;
     }
 
     .LokalMeny li{
@@ -198,6 +205,12 @@ a, a:link,a:visited, a:hover{
         margin: auto;
         background: darkgray;
     }
+
+    #Låter .box{
+        display: grid;
+        grid-template-rows: 5vh 1fr 1fr 1fr 1fr;
+    }
+
     .box{
         width: 60vw;
         height: auto;
@@ -209,7 +222,7 @@ a, a:link,a:visited, a:hover{
         color: back;
     }
 
-    #Art main{
+    #Art main, #Låter main, #Turné main, #Feedback main{
         display: grid;
         grid-template-rows: 5vh auto;
         margin-top: 5vh;
