@@ -3,6 +3,28 @@ body{
     margin: 0;
 }
 
+#Art, #Låter, #Turné, #Feedback{
+    background: rgb(24, 58, 73);
+}
+
+#Art footer, #Låter footer, #Turné footer, #Feedback footer{
+    background: rgb(58, 194, 58);
+    border-top-left-radius: 50px;
+}
+
+#Hemsida{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+}
+
+#Info{
+background: rgb(53, 66, 66);
+}
+
+#Art header, #Låter header, #Turné header, #Feedback header{
+    border-bottom-right-radius: 50px;
+}
+
 .wrapper{
     display: grid;
     grid-template-columns: 1fr;
@@ -14,6 +36,7 @@ body{
     "main"
     "footer";
 }
+
 
 header{
     grid-area: header;
@@ -122,12 +145,28 @@ a, a:link,a:visited, a:hover{
 
 #Låter .box{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.box{
+    display: grid;
 }
 
 #Art main, #Låter main, #Turné main, #Feedback main{
     display: grid;
     grid-template-rows: 5vh auto;
+}
+
+#Låter .box section{
+    margin: auto;
+}
+
+.box p{
+    text-align: left;
+}
+
+video{
+    width: 40vw
 }
 
 @media only screen and (min-width: 900px) {
@@ -142,6 +181,20 @@ a, a:link,a:visited, a:hover{
         "main"
         "footer";
     }
+
+    #Låter .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh auto 10vh;
+        margin: 0;
+        padding: 0;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+
+
 
     .GM ul{
         display: grid;
@@ -208,7 +261,7 @@ a, a:link,a:visited, a:hover{
 
     #Låter .box{
         display: grid;
-        grid-template-rows: 5vh 1fr 1fr 1fr 1fr;
+        grid-template-rows: 20vh auto;
     }
 
     .box{
@@ -244,7 +297,7 @@ footer p{
 }
 
 #Hemsida h1, #Hemsida p{
-    text-align: left;
+    text-align: center;
 }
 
 table, th, td{
