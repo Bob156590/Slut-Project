@@ -4,15 +4,15 @@
         <meta charset="UTF-8">
         <title>Feedback</title>
         <link href="Style.css" rel="stylesheet">
-        <meta name="viewport" content="width=divce-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body id="Feedback">
         <div class="wrapper">
             <header>
                 <nav class="GM">
                     <ul>
-                        <li class="Logo"><a href="Hemsida.html">Melody</a></li>
-                        <li><a href="Hemsida.html">Hemsida</a></li>
+                        <li class="Logo"><a href="index.html">Melody</a></li>
+                        <li><a href="index.html">Hemsida</a></li>
                         <li><a href="GenreSida.html">Genrer</a></li>
                         <li><a href="IS.html">Instrumenter</a></li>
                         <li><a href="Support.html">Support</a></li>
@@ -34,14 +34,19 @@
                     <div class="box">
                         <h1>Feedback</h1>
                         <p>Här kan du skriva en feedback till oss på vår hemsida om du vill. Btw om du vill skriva ytterligare en feedback till oss efter denna, måste du skriva om ditt användarnamn och lösenord om du vill att vi ska veta att det var du igen.</p>
+                        <!--The action attribute will send the data entered by the user to the URL specified in the action attribute.-->
+                        <!-- "method"-attributet anger HTTP-metoden som används för att skicka formulärdata, i det här formuläret använder jag "GET" som bifogar formulärdata till URL:en.-->
                         <form action="Tack.html" method="GET">
+                            <!--"Label"-tagg används tillhandahålla en text för ett input. -->
                             <label for="aNamn">Användarnamn: </label><br>
-                            <input type="text" id="aNamn" Name="aNamn"><br>
-                            
+                            <!-- Taggen "input" används för att skapa ett interaktivt kontrollelement med hjälp av "typ", du kan skapa till exempel: text, lösenord (Den döljer vad användaren skriver), kryssrutor, raidos och många fler . -->
+                            <input type="text" id="aNamn" Name="aNamn" required><br>
+                            <!--Attributen id och "for" gör det så att genom att klicka på label texten kommer det att välja eller fokusera motsvarande input.-->
+                            <!--Attributet name ger en variabel till data som kommer att skickas-->
                             <label for="Lösenord">Lösenord: </label><br>
-                            <input type="password" id="Lösenord" name="lösenord"><br><br>
-                            
+                            <input type="password" id="Lösenord" name="lösenord" required><br><br>
                             <p>Vilken av de three låterna tycke du om mest?</p>
+
                             <input type="checkbox" id="Sabaton" name="Sabaton">
                             <label for="Sabaton">The Red Baron</label><br>
                             <input type="checkbox" id="E.K.N" name="Ë.K.N">
@@ -50,22 +55,22 @@
                             <label for="P.T.L">Prais The Lord</label><br>
                             <input type="checkbox" id="Ingen" name="Ingen">
                             <label for="Ingen">Ingen av dem</label><br>
-
+                            <!--Attributet namn i radio grupera de andra radio attributet med varandra-->
                             <p>Vad tycker du om min hemsida från dålig till bra?</p>
-                            <input type="radio" id="r.d" name="r.d">
+                            <input type="radio" id="r.d" name="review" required>
                             <label for="r.d">Riktigt dåligt</label><br>
-                            <input type="radio" id="dåligt" name="dåligt">
+                            <input type="radio" id="dåligt" name="review" required>
                             <label for="dåligt">dåligt</label><br>
-                            <input type="radio" id="ok" name="ok">
+                            <input type="radio" id="ok" name="review" required>
                             <label for="ok">ok</label><br>
-                            <input type="radio" id="bra" name="bra">
+                            <input type="radio" id="bra" name="review" required>
                             <label for="bra">Bra</label><br>
-                            <input type="radio" id="r.b" name="r.b">
+                            <input type="radio" id="r.b" name="review" required>
                             <label for="r.b">Riktigt bra</label><br>
-
-                            <p>Vill du berätta varför??</p>
+                            <!--Textarea-elementet/taggen skapar ett område där användaren kan skriva en lång text.-->
+                            <p>Vill du berätta varför?</p>
                             <textarea name="why"></textarea><br><br>
-
+                            <!--Subint-elementet/taggen skickar all data till servern/sidan vi väljer.-->
                             <input type="submit" value="Skicka">
                         </form>
                     </div>
