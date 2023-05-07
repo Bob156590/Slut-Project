@@ -9,7 +9,7 @@ body{
 
 #Genre footer, #Låter footer, #Turné footer, #Feedback footer,#Tack footer{
     background: rgb(58, 194, 58);
-    border-top-left-radius: 50px;
+    border-top-left-radius: 2em;
 }
 
 #Instrumenter{
@@ -29,7 +29,7 @@ background: lightgray;
 }
 
 #Genre header, #Låter header, #Turné header, #Feedback header{
-    border-bottom-right-radius: 50px;
+    border-bottom-right-radius: 2em;
 }
 
 /*Från denna rad till rad 172 använder jag för de mobila rutnätslayouterna för varje sida, global meny, lokal meny, boxlayout och sidfotslayout. Och länkdesign aka LoVE Focus Hate.*/
@@ -37,6 +37,18 @@ background: lightgray;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20vh auto 15vh;
+    margin: 0;
+    padding: 0;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+#Turné .wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 65vh 15vh;
     margin: 0;
     padding: 0;
     grid-template-areas:
@@ -211,6 +223,10 @@ a:focus{
 #Tack img{
     width: 50vw;
     margin: auto;
+}
+
+#Support img{
+    width: 15vw;
 }
 
 video{
