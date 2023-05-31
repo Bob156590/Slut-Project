@@ -32,7 +32,7 @@ background: lightgray;
     border-bottom-right-radius: 2em;
 }
 
-/*Från denna rad till rad 172 använder jag för de mobila rutnätslayouterna för varje sida, global meny, lokal meny, boxlayout och sidfotslayout. Och länkdesign aka LoVE Focus Hate.*/
+/*Från denna rad till rad 172 använder jag för de mobila rutnätslayouterna för varje sida, Global_meny, lokal meny, boxlayout och sidfotslayout. Och länkdesign aka LoVE Focus Hate.*/
 .wrapper{
     display: grid;
     grid-template-columns: 1fr;
@@ -91,6 +91,7 @@ ol li{
     border: none;
     text-align: left;
     margin-left: 20vw;
+    list-style-type: numbers;
 }
 
 ul{
@@ -106,7 +107,7 @@ li{
     margin-top: 2px;
 }
 
-.GM li:nth-child(1){
+.Global_meny li:nth-child(1){
     border: none;
     text-align: left;
 }
@@ -173,6 +174,11 @@ a, a:link, a:visited{
     color: white;
 }
 
+/*a:focus låter dig utforma en länk som användaren fokuserar på, t.ex. med tabbtangenten*/
+a:focus{
+    color: khaki;
+}
+
 a:active{
     background: blue;
 }
@@ -182,10 +188,6 @@ a:hover{
     color: #442212;
 }
 
-/*a:focus låter dig utforma en länk som användaren fokuserar på, t.ex. med tabbtangenten*/
-a:focus{
-    color: khaki;
-}
 
 /*Från denna rad till rad 198, är till för att designa de två diverna för mobiler: box och cirkel.*/
 .circle{
@@ -303,16 +305,16 @@ tr{
         "footer";
     }
 
-    .GM ul{
+    .Global_meny ul{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
-    .GM{
+    .Global_meny{
         margin: auto;
     }
 
-    .GM li{
+    .Global_meny li{
         list-style-type:none;
         font-size: 30px;
         text-align:center;

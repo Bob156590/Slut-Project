@@ -9,7 +9,7 @@
     <body id="Feedback">
         <div class="wrapper">
             <header>
-                <nav class="GM">
+                <nav class="Global_meny">
                     <ul>
                         <li class="Logo"><a href="index.html">Melody</a></li>
                         <li><a href="index.html">Hemsida</a></li>
@@ -31,7 +31,7 @@
                     </nav>
                 </section>
                 <section>
-                    <div class="box">
+                    <div class="box"><!--Det har är en div som har klassen "box". Det gör det möjligt för mig att ha olika bakgrund för den lokala menyn.-->
                         <h1>Feedback</h1>
                         <p>Här kan du skriva en feedback till oss på vår hemsida om du vill. Btw om du vill skriva ytterligare en feedback till oss efter denna, måste du skriva om ditt användarnamn och lösenord om du vill att vi ska veta att det var du igen.</p>
                         <!--The action attribute will send the data entered by the user to the URL specified in the action attribute.-->
@@ -47,26 +47,26 @@
                             <input type="password" id="Lösenord" name="lösenord" required><br><br>
                             <p>Vilken av de three låterna tycke du om mest?</p>
 
-                            <input type="checkbox" id="Sabaton" name="Sabaton">
+                            <input type="checkbox" id="Sabaton" name="Sabaton" value="Red Baron">
                             <label for="Sabaton">The Red Baron</label><br>
-                            <input type="checkbox" id="E.K.N" name="Ë.K.N">
+                            <input type="checkbox" id="E.K.N" name="E.K.N" value="Mozart">
                             <label for="E.K.N">Eine Kleine Nachtmusik</label><br>
-                            <input type="checkbox" id="P.T.L" name="P.T.L">
+                            <input type="checkbox" id="P.T.L" name="P.T.L" value="A$Ap">
                             <label for="P.T.L">Prais The Lord</label><br>
-                            <input type="checkbox" id="Ingen" name="Ingen">
+                            <input type="checkbox" id="Ingen" name="Ingen" value="Ingen">
                             <label for="Ingen">Ingen av dem</label><br>
                             <!--Attributet namn i radio grupera de andra radio attributet med varandra-->
                             <p>Vad tycker du om min hemsida från dålig till bra?</p>
-                            <input type="radio" id="r.d" name="review" required>
-                            <label for="r.d">Riktigt dåligt</label><br>
-                            <input type="radio" id="dåligt" name="review" required>
-                            <label for="dåligt">dåligt</label><br>
-                            <input type="radio" id="ok" name="review" required>
-                            <label for="ok">ok</label><br>
-                            <input type="radio" id="bra" name="review" required>
-                            <label for="bra">Bra</label><br>
-                            <input type="radio" id="r.b" name="review" required>
-                            <label for="r.b">Riktigt bra</label><br>
+                            <input type="radio" id="review1" name="review1" value="R_d" required>
+                            <label for="review1">Riktigt dåligt</label><br>
+                            <input type="radio" id="review2" name="review2" value="dåligt" required>
+                            <label for="review2">dåligt</label><br>
+                            <input type="radio" id="review3" name="review3" value="ok" required>
+                            <label for="review3">ok</label><br>
+                            <input type="radio" id="review4" name="review4" value="bra" required>
+                            <label for="review4">Bra</label><br>
+                            <input type="radio" id="review5" name="review5" value="R_b" required>
+                            <label for="review5">Riktigt bra</label><br>
                             <!--Textarea-elementet/taggen skapar ett område där användaren kan skriva en lång text.-->
                             <p>Vill du berätta varför?</p>
                             <textarea name="why"></textarea><br><br>
