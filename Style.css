@@ -270,6 +270,10 @@ tr{
     border-radius: 50px;
 }
 
+p, li, h1, h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 /*Alla saker inuti mediataggen är i princip samma saker som ovan men för skärmar större än 900px. Som mest är bärbara datorer och datorer*/
 @media only screen and (min-width: 900px) {
     .wrapper{
