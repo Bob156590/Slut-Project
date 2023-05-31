@@ -12,18 +12,20 @@ body{
     border-top-left-radius: 2em;
 }
 
+/*linear-gradient gör så backgrounden övergång mellan två eller flera färger. I det här exemplet har jag fyra färger.*/
 #Instrumenter{
+    /*"90deg" gör det så att övergången kommer i 90 graders vinkel*/
     background:  linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 }
 
 #Hemsida{
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    animation: gradient 15s ease infinite;
 }
 
 header{
     background: rgb(46, 163, 151);
 }
+
 #Support{
 background: lightgray;
 }
@@ -45,18 +47,7 @@ background: lightgray;
     "footer";
 }
 
-#Turné .wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20vh 65vh 15vh;
-    margin: 0;
-    padding: 0;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-}
-
+/*vh är ett mått som står för sikthöjd. Det betyder att 1vh motsvarar 1% av din skärmhöjd.*/
 #Låter .wrapper, #Feedback .wrapper{
     display: grid;
     grid-template-columns: 1fr;
@@ -69,6 +60,7 @@ background: lightgray;
     "footer";
 }
 
+/*detta talar om för programmet att header i .wrapper är header på HTML-sidan.*/
 header{
     grid-area: header;
 }
@@ -87,6 +79,8 @@ ul{
     text-align: center;
 }
 
+/*Detta gör att den ordnade listan numreras.*/
+/*vw är samma som vh men för bredden på din skärm.*/
 ol li{
     border: none;
     text-align: left;
@@ -94,6 +88,7 @@ ol li{
     list-style-type: numbers;
 }
 
+/*Detta tar ut dekorationen i listan/navigeringen.*/
 ul{
     text-decoration: none;
     list-style-type: none;
@@ -154,10 +149,7 @@ footer{
     text-align: center;
 }
 
-#Låter .box{
-    display: grid;
-    grid-template-rows: auto auto;
-}
+
 
 .box{
     display: grid;
@@ -179,14 +171,14 @@ a:focus{
     color: khaki;
 }
 
-a:active{
-    background: blue;
-}
-
 /*a:hover låter dig utforma en länk när en användare håller muspekaren över den*/
 a:hover{
     color: #442212;
 }
+a:active{
+    background: blue;
+}
+
 
 
 /*Från denna rad till rad 198, är till för att designa de två diverna för mobiler: box och cirkel.*/
@@ -232,7 +224,11 @@ a:hover{
 }
 
 video{
-    width: 40vw;
+    width: 25vw;
+}
+
+video, h2{
+    margin: auto;
 }
 
 textarea{
@@ -371,11 +367,6 @@ tr{
         grid-template-columns: 15vw 15vw 15vw 15vw;
         margin: auto;
         background: darkgray;
-    }
-
-    #Låter .box{
-        display: grid;
-        grid-template-rows: 20vh auto;
     }
 
     .box{
