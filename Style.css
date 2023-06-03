@@ -37,8 +37,8 @@ background: lightgray;
 /*Från denna rad till rad 172 använder jag för de mobila rutnätslayouterna för varje sida, Global_meny, lokal meny, boxlayout och sidfotslayout. Och länkdesign aka LoVE Focus Hate.*/
 .wrapper{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20vh auto 15vh;
+    grid-template-columns: 1fr;/*Den här gör collumner*/
+    grid-template-rows: 20vh auto 15vh;/*Den här gör råder*/
     margin: 0;
     padding: 0;
     grid-template-areas:
@@ -76,14 +76,14 @@ footer{
 ul{
     display: grid;
     grid-template-columns: auto;
-    text-align: center;
+    text-align: center;/*Det här centrerar texten i naven.*/
 }
 
 /*Detta gör att den ordnade listan numreras.*/
 /*vw är samma som vh men för bredden på din skärm.*/
 ol li{
     border: none;
-    text-align: left;
+    text-align: left; /**/
     margin-left: 20vw;
     list-style-type: numbers;
 }
@@ -98,7 +98,7 @@ ul{
 li{
     list-style-type:none;
     text-align:center;
-    border: 1px solid gray;
+    border: 1px solid gray;/*Det här elementen gör en border*/
     margin-top: 2px;
 }
 
@@ -149,8 +149,6 @@ footer{
     text-align: center;
 }
 
-
-
 .box{
     display: grid;
 }
@@ -161,9 +159,16 @@ footer{
 }
 
 /*a:visited låter dig styla en länk som användaren besökte tidigare, a:link allows you to style a link the user hasn't visited before,a is for everylink*/
-a, a:link, a:visited{
+a{
     text-decoration: none;
-    color: white;
+}
+
+a:link{
+    color: crimson;
+}
+
+a:visited{
+    color:white;
 }
 
 /*a:focus låter dig utforma en länk som användaren fokuserar på, t.ex. med tabbtangenten*/
@@ -175,11 +180,10 @@ a:focus{
 a:hover{
     color: #442212;
 }
+
 a:active{
-    background: blue;
+    background: darkgoldenrod;
 }
-
-
 
 /*Från denna rad till rad 198, är till för att designa de två diverna för mobiler: box och cirkel.*/
 .circle{
@@ -188,11 +192,12 @@ a:active{
     border-radius: 50%;
     width: 5vh;
     height: 5vh;
-    margin-left: auto;
+    margin-left: auto; /*Det här knuffar cirkelen till vänster*/
     justify-content: center;
     align-items: center;
 }
 
+/*box gör en rektagel där lokal sidorna ska vara*/
 .box{
     width: 72vw;
     height: auto;
@@ -250,7 +255,7 @@ footer p{
 }
 
 #Hemsida main p{
-    font-size: 25px;
+    font-size: 25px;/*Den här elementen bestemar hur stor texten ska vara*/
 }
 
 /*Härifrån till råd 253, är för table storlek och table border storlek och disign.*/
@@ -271,10 +276,10 @@ tr{
 }
 
 p, li, h1, h2{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;/*Det bestämmer vilken typsnittet texten ska använda*/
 }
 
-/*Alla saker inuti mediataggen är i princip samma saker som ovan men för skärmar större än 900px. Som mest är bärbara datorer och datorer*/
+/*Alla saker inuti media-taggen är i princip samma saker som ovan men för skärmar större än 900px. Som mest är bärbara datorer och datorer*/
 @media only screen and (min-width: 900px) {
     .wrapper{
         display: grid;
